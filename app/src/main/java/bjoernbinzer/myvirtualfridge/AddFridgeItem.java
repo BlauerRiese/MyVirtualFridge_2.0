@@ -28,4 +28,9 @@ public class AddFridgeItem extends AppCompatActivity {
             }
         });
     }
+
+    public void openAddFridgeItem(View view) {
+        Intent intent = new Intent(this, AddFridgeItem.class);
+        startActivity(intent);
+    }
 }

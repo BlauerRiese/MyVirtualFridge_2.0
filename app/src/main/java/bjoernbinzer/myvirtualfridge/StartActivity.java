@@ -23,7 +23,7 @@ public class StartActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "HELLO", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -51,7 +51,7 @@ public class StartActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openAddFridgeItem(View view) {
+    public void openAddFridgeItem(View view){
         Intent intent = new Intent(this, AddFridgeItem.class);
         startActivity(intent);
     }
