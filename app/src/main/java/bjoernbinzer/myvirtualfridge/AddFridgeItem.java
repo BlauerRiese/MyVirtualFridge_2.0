@@ -1,5 +1,6 @@
 package bjoernbinzer.myvirtualfridge;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,7 +13,9 @@ public class AddFridgeItem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_fridge_item);
+        //setContentView(R.layout.activity_add_fridge_item);
+        Intent intent = getIntent();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -25,5 +28,4 @@ public class AddFridgeItem extends AppCompatActivity {
             }
         });
     }
-
 }
