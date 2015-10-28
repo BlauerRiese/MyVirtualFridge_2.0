@@ -49,7 +49,22 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // und Datenbankaufruf
+                // Insert user input into DB
+                EditText editProduct = (EditText) findViewById(R.id.editText_product);
+                String product = editProduct.getText().toString();
+                EditText editDurability = (EditText) findViewById(R.id.editText_durability);
+                String durability = editDurability.getText().toString();
+                EditText editQuantity = (EditText) findViewById(R.id.editText_quantity);
+                double quantity = Double.parseDouble(editQuantity.getText().toString());
+                EditText editUom = (EditText) findViewById(R.id.editText_uom);
+                String uom = editUom.getText().toString();
+                EditText editPrice = (EditText) findViewById(R.id.editText_price);
+                double price = Double.parseDouble(editPrice.getText().toString());
+                Spinner spinnerCategory = (Spinner) findViewById(R.id.spinner_category);
+                String category = spinnerCategory.getSelectedItem().toString();
+
+                FridgeDB.insertEntry(product, durability, quantity, uom, price, category);
+
                 finish();
             }
         });

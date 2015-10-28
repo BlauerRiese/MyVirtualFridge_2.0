@@ -15,10 +15,10 @@ public class FridgeDB {
     private static FridgeDBHelper mDBHelper;
 
     public static void createFridgeDB (Context context){
-        mDBHelper = new FridgeDBHelper(context);
+        if (mDBHelper == null ) mDBHelper = new FridgeDBHelper(context);
     }
 
-    public static long insertEntry(int id, String product, String durability,
+    public static long insertEntry(String product, String durability,
                                    double quantity, String uom, double price,
                                    String category ){
 
@@ -27,7 +27,6 @@ public class FridgeDB {
 
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(FridgeDBHelper.COLUMN_ENTRY_ID, id);
         values.put(FridgeDBHelper.COLUMN_PRODUCT, product);
         values.put(FridgeDBHelper.COLUMN_DURABILITY, durability);
         values.put(FridgeDBHelper.COLUMN_QUANTITY, quantity);

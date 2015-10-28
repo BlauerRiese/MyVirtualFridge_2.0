@@ -27,6 +27,7 @@ public class StartActivity extends AppCompatActivity {
                 openAddFridgeItem(view);
             }
         });
+        FridgeDB.createFridgeDB(this);
     }
 
     @Override
