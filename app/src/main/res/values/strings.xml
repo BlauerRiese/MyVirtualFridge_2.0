@@ -9,6 +9,7 @@
     <string name="item_uom">Einheit:</string>
     <string name="item_price">Preis:</string>
     <string name="item_category">Kategorie:</string>
+    <string name="price_optional">Optional</string>
 
     <string name="button_neutral">Hinzufügen</string>
     <string name="title_activity_dialog_">Dialog_Activity</string>

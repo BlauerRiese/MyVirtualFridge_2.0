@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
@@ -16,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -52,14 +54,33 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 // Insert user input into DB
                 EditText editProduct = (EditText) findViewById(R.id.editText_product);
                 String product = editProduct.getText().toString();
+                if (product.isEmpty()){
+                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 EditText editDurability = (EditText) findViewById(R.id.editText_durability);
                 String durability = editDurability.getText().toString();
+                if (durability.isEmpty()){
+                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 EditText editQuantity = (EditText) findViewById(R.id.editText_quantity);
-                double quantity = Double.parseDouble(editQuantity.getText().toString());
+                String quantitystr = editQuantity.getText().toString();
+                if (quantitystr.isEmpty()){
+                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                double quantity = Double.parseDouble(quantitystr);
                 EditText editUom = (EditText) findViewById(R.id.editText_uom);
                 String uom = editUom.getText().toString();
                 EditText editPrice = (EditText) findViewById(R.id.editText_price);
-                double price = Double.parseDouble(editPrice.getText().toString());
+                String pricestr = editPrice.getText().toString().replace(",",".");
+                double price;
+                if (pricestr.isEmpty()){
+                    price = 0;
+                }else{
+                    price = Double.parseDouble(pricestr);
+                }
                 Spinner spinnerCategory = (Spinner) findViewById(R.id.spinner_category);
                 String category = spinnerCategory.getSelectedItem().toString();
 
