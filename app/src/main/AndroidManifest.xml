@@ -23,6 +23,8 @@
             android:label="@string/title_activity_add_fridge_item"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".VegetableContent" >
+        </activity>
     </application>
 
 </manifest>
