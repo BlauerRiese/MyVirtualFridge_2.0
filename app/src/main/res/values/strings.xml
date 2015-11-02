@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyVirtualFridge</string>
+    <string name="app_name">My Virtual Fridge</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_fridge_item">AddFridgeItem</string>
 
@@ -16,6 +16,9 @@
     <string name="item_uom_hint">kg</string>
     <string name="title_uom_dialog">Einheit wählen:</string>
     <string name="ToastMessage">Bitte füllen Sie alle Felder aus</string>
+    <string name="gemueseText">Gemüse</string>
+    <string name="getreideText">Getreide- und Kornprodukte</string>
+    <string name="snackText">Snacks</string>
 
     <string-array name="category">
         <item>Obst</item>
