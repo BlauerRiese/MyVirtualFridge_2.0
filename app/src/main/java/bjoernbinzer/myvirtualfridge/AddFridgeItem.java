@@ -55,19 +55,19 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 EditText editProduct = (EditText) findViewById(R.id.editText_product);
                 String product = editProduct.getText().toString();
                 if (product.isEmpty()){
-                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(),getString(R.string.ToastMessage), Toast.LENGTH_LONG).show();
                     return;
                 }
                 EditText editDurability = (EditText) findViewById(R.id.editText_durability);
                 String durability = editDurability.getText().toString();
                 if (durability.isEmpty()){
-                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(),getString(R.string.ToastMessage), Toast.LENGTH_LONG).show();
                     return;
                 }
                 EditText editQuantity = (EditText) findViewById(R.id.editText_quantity);
                 String quantitystr = editQuantity.getText().toString();
                 if (quantitystr.isEmpty()){
-                    Toast.makeText(getApplication(),"Bitte füllen Sie alle Felder aus.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(),getString(R.string.ToastMessage), Toast.LENGTH_LONG).show();
                     return;
                 }
                 double quantity = Double.parseDouble(quantitystr);
