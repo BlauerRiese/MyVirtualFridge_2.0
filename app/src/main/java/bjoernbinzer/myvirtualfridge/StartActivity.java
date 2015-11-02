@@ -2,6 +2,8 @@ package bjoernbinzer.myvirtualfridge;
 
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -28,6 +30,9 @@ public class StartActivity extends AppCompatActivity {
             }
         });
         FridgeDB.createFridgeDB(this);
+
+        Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
+
     }
 
     @Override
