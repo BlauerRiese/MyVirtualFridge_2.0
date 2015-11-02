@@ -4,6 +4,8 @@ import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
@@ -117,6 +119,53 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 category = parent.getItemAtPosition(position).toString();
+                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+                Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                switch(category){
+                    case "Gemüse":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#64dd17")));
+                        toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
+                        break;
+                    case "Fleisch und Fisch":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#d50000")));
+                        toolbar.setBackgroundColor(Color.parseColor("#d50000"));
+                        break;
+                    case "Milch- und Eierprodukte":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#b0bec5")));
+                        toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
+                        break;
+                    case "Tiefkühlprodukte":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00e5ff")));
+                        toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
+                        break;
+                    case "Getreideprodukte":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ffff00")));
+                        toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
+                        break;
+                    case "Saucen, Dressings, Öle":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#cddc39")));
+                        toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
+                        break;
+                    case "Gewürze":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ce93d8")));
+                        toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
+                        break;
+                    case "Getränke":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#03a9f4")));
+                        toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
+                        break;
+                    case "Snacks":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff80ab")));
+                        toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
+                        break;
+                    case "Sonstiges":
+                        fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1de9b6")));
+                        toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
+                        break;
+
+                }
+
+
             }
 
             @Override
