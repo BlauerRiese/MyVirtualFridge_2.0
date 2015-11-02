@@ -39,19 +39,19 @@
                         android:contextClickable="false"
                         android:layout_weight="1"/>
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="GEMÜSE"
-                        android:id="@+id/textView5"
+                        android:text="Gemüse"
+                        android:id="@+id/textView1"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -73,19 +73,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="FLEISCH &amp; FISCH"
+                        android:text="Obst"
                         android:id="@+id/textView2"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -107,19 +107,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="OBST"
-                        android:id="@+id/textView4"
+                        android:text="Fleisch und Fisch"
+                        android:id="@+id/textView3"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
 
                 </LinearLayout>
@@ -152,19 +152,19 @@
                         android:contextClickable="false"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="GETRÄNKE"
-                        android:id="@+id/textView3"
+                        android:text="Getränke"
+                        android:id="@+id/textView4"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -186,19 +186,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="GEWÜRZE"
-                        android:id="@+id/textView6"
+                        android:text="Gewürze"
+                        android:id="@+id/textView5"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -220,19 +220,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="TIEFKÜHL"
-                        android:id="@+id/textView7"
+                        android:text="Tiefkühl"
+                        android:id="@+id/textView6"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -274,18 +274,19 @@
                         android:contextClickable="false"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="SAUCEN &amp; DRESSINGS"
-                        android:id="@+id/MilchUndEierTextView"
+                        android:text="Saucen und Dressings"
+                        android:id="@+id/textView7"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:layout_weight="1"
+                        android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -307,19 +308,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="GETREIDE-PRODUKTE"
-                        android:id="@+id/getreideTextView"
+                        android:text="Getreideprodukte"
+                        android:id="@+id/textView8"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -341,19 +342,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="SNACKS"
-                        android:id="@+id/textView10"
+                        android:text="Snacks"
+                        android:id="@+id/textView9"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -402,18 +403,19 @@
                         android:contextClickable="false"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="MILCH- &amp; EIER PRODUKTE"
-                        android:id="@+id/textView11"
+                        android:text="Milchprodukte und Eier"
+                        android:id="@+id/textView10"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:layout_weight="1"
+                        android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -435,19 +437,19 @@
                         android:layout_gravity="top|center"
                         android:layout_weight="1" />
 
-                    <TextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="SONSTIGES"
-                        android:id="@+id/textView12"
+                        android:text="Sonstiges"
+                        android:id="@+id/textView11"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textIsSelectable="true"
+                        android:textIsSelectable="false"
                         android:layout_weight="2"
                         android:textColor="#5d4037"
-                        android:gravity="center|center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
@@ -463,27 +465,7 @@
                     android:visibility="invisible"
                     android:background="#ff8a80">
 
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageButton8"
-                        android:layout_gravity="top|center"
-                        android:layout_weight="1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="GETREIDE-PRODUKTE"
-                        android:id="@+id/textView9"
-                        android:layout_gravity="bottom|center"
-                        android:textStyle="bold"
-                        android:singleLine="false"
-                        android:textIsSelectable="true"
-                        android:layout_weight="2"
-                        android:textColor="#5d4037"
-                        android:gravity="center_horizontal"
-                        android:layout_margin="2dp" />
                 </LinearLayout>
             </LinearLayout>
 </LinearLayout>
