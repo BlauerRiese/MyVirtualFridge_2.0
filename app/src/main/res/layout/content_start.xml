@@ -19,7 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#e3f2fd">
+        android:background="#e3f2fd"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:id="@+id/leftUpperFridge"
@@ -29,7 +30,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="true"
-            android:background="#4caf50"
+            android:background="#64dd17"
             android:layout_marginRight="8dp">
 
             <ImageButton
@@ -65,7 +66,8 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="true"
-            android:background="#ff8a80">
+            android:background="#fdbc0a"
+            android:baselineAligned="true">
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -98,7 +100,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#eeeeee"
+                    android:background="#d50000"
                     android:layout_marginLeft="8dp">
 
                     <ImageButton
@@ -144,7 +146,8 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+        android:baselineAligned="false">
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
@@ -154,7 +157,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#4caf50"
+                    android:background="#03a9f4"
                     android:layout_marginRight="8dp">
 
                     <ImageButton
@@ -190,7 +193,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ff8a80">
+                    android:background="#ce93d8">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -223,7 +226,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#eeeeee"
+                    android:background="#00e5ff"
                     android:layout_marginLeft="8dp">
 
                     <ImageButton
@@ -256,7 +259,6 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/secondFridgeRow"
             android:background="#ccdfee"
             android:baselineAligned="false">
 
@@ -271,7 +273,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:weightSum="3"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:baselineAligned="false">
 
                 <LinearLayout
                     android:id="@+id/MilchUndEierLayout"
@@ -281,7 +284,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#eeeeee"
+                    android:background="#cddc39"
                     android:layout_marginRight="8dp">
 
                     <ImageButton
@@ -317,7 +320,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ff8a80">
+                    android:background="#ffff00">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -350,7 +353,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ff8a80"
+                    android:background="#ff80ab"
                     android:layout_marginLeft="8dp">
 
                     <ImageButton
@@ -395,8 +398,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:weightSum="3"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
             android:gravity="bottom"
             android:baselineAligned="false"
             android:layout_weight="1">
@@ -409,7 +410,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#eeeeee"
+                    android:background="#b0bec5"
                     android:layout_marginRight="8dp">
 
                     <ImageButton
@@ -425,7 +426,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Milchprodukte und Eier"
+                        android:text="Milch- und Eierprodukte"
                         android:id="@+id/textView10"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
@@ -445,7 +446,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ff8a80">
+                    android:background="#1de9b6">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -478,7 +479,7 @@
                     android:layout_weight="1"
                     android:contextClickable="false"
                     android:visibility="visible"
-                    android:background="#8280ff"
+                    android:background="#eff6fc"
                     android:layout_marginLeft="8dp">
 
 
