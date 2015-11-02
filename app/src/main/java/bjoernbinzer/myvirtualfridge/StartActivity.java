@@ -29,6 +29,14 @@ public class StartActivity extends AppCompatActivity {
         });
         FridgeDB.createFridgeDB(this);
 
+        LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.leftUpperFridge);
+        vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openVegetableContent(view);
+            }
+        });
+
         LinearLayout fruitButton = (LinearLayout)findViewById(R.id.middleUpperFridge);
         fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
