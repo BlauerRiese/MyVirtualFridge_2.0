@@ -29,15 +29,14 @@ public class StartActivity extends AppCompatActivity {
         });
         FridgeDB.createFridgeDB(this);
 
-        LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.leftUpperFridge);
+        LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.linearLayoutVegetables);
         vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                openVegetableContent(view);
+            public void onClick(View view) {openVegetableContent(view);
             }
         });
 
-        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.middleUpperFridge);
+        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.linearLayoutFruits);
         fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +44,7 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
-        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.rightUpperFridge);
+        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.linearLayoutMeatFish);
         meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
