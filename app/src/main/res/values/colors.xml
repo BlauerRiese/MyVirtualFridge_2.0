@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#3F51B5</color>
+
+    <color name="categoryTextView">#5d4037</color>
+    <color name="leftUpperFridge">#64dd17</color>
+    <color name="middleUpperFridge">#fdbc0a</color>
+    <color name="rightUpperFridge">#d50000</color>
+    <color name="upperSpaceSection">#ccdfee</color>
+    <color name="linearLayout2">#03a9f4</color>
+    <color name="linearLayout3">#ce93d8</color>
+    <color name="linearLayout4">#00e5ff</color>
+    <color name="milchUndEierLayout">#cddc39</color>
+    <color name="getreideLayout">#ffff00</color>
+    <color name="leeresLayout">#ff80ab</color>
+    <color name="linearLayout9">#b0bec5</color>
+    <color name="linearLayout10">#1de9b6</color>
 </resources>
