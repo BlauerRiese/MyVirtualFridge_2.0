@@ -15,7 +15,7 @@ public class MeatFishContent extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        LinearLayout meatFishButton = (LinearLayout) findViewById(R.id.leftUpperMiddleFridge);
+        LinearLayout meatFishButton = (LinearLayout) findViewById(R.id.rightUpperFridge);
         meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {

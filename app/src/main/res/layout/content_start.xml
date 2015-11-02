@@ -71,7 +71,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/leftUpperMiddleFridge"
+            android:id="@+id/middleUpperFridge"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -116,7 +116,7 @@
         </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/rightUpperMiddleFridge"
+                    android:id="@+id/rightUpperFridge"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -126,7 +126,9 @@
                     android:background="#d50000"
                     android:layout_marginLeft="8dp"
                     android:padding="8dp"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:onClick="openMeatFishContent"
+                    android:nestedScrollingEnabled="true">
 
                     <ImageButton
                         android:layout_width="wrap_content"

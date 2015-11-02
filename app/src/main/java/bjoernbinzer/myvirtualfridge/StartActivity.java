@@ -1,18 +1,14 @@
 package bjoernbinzer.myvirtualfridge;
 
-import android.app.FragmentManager;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class StartActivity extends AppCompatActivity {
@@ -33,7 +29,7 @@ public class StartActivity extends AppCompatActivity {
         });
         FridgeDB.createFridgeDB(this);
 
-        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.leftUpperMiddleFridge);
+        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.middleUpperFridge);
         fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +37,7 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
-        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.leftUpperMiddleFridge);
+        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.rightUpperFridge);
         meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
