@@ -14,18 +14,5 @@ public class FruitContent extends AppCompatActivity{
         this.setContentView(R.layout.activity_fruit_content);
 
         Intent intent = getIntent();
-
-        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.middleUpperFridge);
-        fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openFruitContent(view);
-            }
-        });
-    }
-
-    public void openFruitContent(View view) {
-        Intent intent = new Intent(this, FruitContent.class);
-        startActivity(intent);
     }
 }

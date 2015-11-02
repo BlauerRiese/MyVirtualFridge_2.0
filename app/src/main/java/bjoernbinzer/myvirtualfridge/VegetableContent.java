@@ -15,18 +15,5 @@ public class VegetableContent extends AppCompatActivity {
         setContentView(R.layout.activity_vegetable_content);
 
         Intent intent = getIntent();
-
-        LinearLayout vegetableButton = (LinearLayout) findViewById(R.id.leftUpperFridge);
-        vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openVegetableContent(view);
-            }
-        });
-    }
-
-    public void openVegetableContent(View view) {
-        Intent intent = new Intent(this, VegetableContent.class);
-        startActivity(intent);
     }
 }

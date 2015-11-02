@@ -14,18 +14,5 @@ public class MeatFishContent extends AppCompatActivity {
         setContentView(R.layout.activity_meat_fish_content);
 
         Intent intent = getIntent();
-
-        LinearLayout meatFishButton = (LinearLayout) findViewById(R.id.rightUpperFridge);
-        meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMeatFishContent(view);
-            }
-        });
-    }
-
-    public void openMeatFishContent(View view) {
-        Intent intent = new Intent(this, MeatFishContent.class);
-        startActivity(intent);
     }
 }
