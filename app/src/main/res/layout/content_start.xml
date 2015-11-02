@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@color/leftUpperFridge"
+            android:background="@color/box01"
             android:layout_marginRight="8dp"
             android:onClick="openVegetableContent"
             android:padding="10dp"
@@ -53,9 +53,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/gemueseText"
+                android:text="@string/text_box01"
                 android:id="@+id/textView1"
                 android:layout_gravity="bottom|center"
+                android:textStyle="bold"
                 android:singleLine="false"
                 android:textIsSelectable="false"
                 android:textColor="@color/categoryTextView"
@@ -63,10 +64,9 @@
                 android:layout_margin="2dp"
                 android:clickable="false"
                 android:visibility="visible"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:contextClickable="false"
-                android:focusable="false"
-                android:textStyle="bold" />
+                android:focusable="false" />
 
         </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@color/middleUpperFridge"
+            android:background="@color/box02"
             android:padding="8dp"
             android:onClick="openFruitContent"
             android:nestedScrollingEnabled="true"
@@ -101,9 +101,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Obst"
+                android:text="@string/text_box02"
                 android:id="@+id/textView2"
                 android:layout_gravity="bottom|center"
+                android:textStyle="bold"
                 android:singleLine="false"
                 android:textIsSelectable="false"
                 android:textColor="@color/categoryTextView"
@@ -111,8 +112,7 @@
                 android:layout_margin="2dp"
                 android:clickable="false"
                 android:contextClickable="false"
-                android:focusable="false"
-                android:textStyle="bold" />
+                android:focusable="false" />
         </LinearLayout>
 
                 <LinearLayout
@@ -123,7 +123,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="false"
-                    android:background="@color/rightUpperFridge"
+                    android:background="@color/box03"
                     android:layout_marginLeft="8dp"
                     android:padding="8dp"
                     android:focusable="false"
@@ -148,9 +148,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Fleisch und Fisch"
+                        android:text="@string/text_box03"
                         android:id="@+id/textView3"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:textColor="@color/categoryTextView"
@@ -158,8 +159,7 @@
                         android:layout_margin="2dp"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
-                        android:textStyle="bold" />
+                        android:focusable="false" />
 
                 </LinearLayout>
 
@@ -193,37 +193,35 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/linearLayout2"
+                    android:background="@color/box04"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/imageButton4"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewBeverages"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/getraenke"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
-                        android:padding="12dp" />
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Getränke"
-                        android:id="@+id/textViewBeverages"
+                        android:text="@string/text_box04"
+                        android:id="@+id/textView4"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
-
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -234,35 +232,34 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/linearLayout3"
+                    android:background="@color/box05"
                     android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewSpicery"
+                        android:id="@+id/imageButton5"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/getraenke"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
-                        android:padding="12dp" />
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Gewürze"
-                        android:id="@+id/textViewSpicery"
+                        android:text="@string/text_box05"
+                        android:id="@+id/textView5"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -273,36 +270,35 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/linearLayout4"
+                    android:background="@color/box06"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewFrozen"
+                        android:id="@+id/imageButton6"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/gefrier"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
-                        android:padding="12dp" />
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/gefrier" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Tiefkühl"
-                        android:id="@+id/textViewFrozen"
+                        android:text="@string/text_box06"
+                        android:id="@+id/textView6"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -337,7 +333,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/milchUndEierLayout"
+                    android:background="@color/box07"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -358,14 +354,14 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:id="@+id/textView7"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp"
-                        android:text="Saucen, Dressings, Öle"
-                        android:textStyle="bold" />
+                        android:text="@string/text_box07" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -376,7 +372,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/getreideLayout"
+                    android:background="@color/box08"
                     android:padding="10dp">
 
                     <ImageButton
@@ -394,16 +390,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="@string/getreideText"
+                        android:text="@string/text_box08"
                         android:id="@+id/textView8"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -414,7 +410,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/leeresLayout"
+                    android:background="@color/box09"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
@@ -433,16 +429,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="@string/snackText"
+                        android:text="@string/text_box09"
                         android:id="@+id/textView9"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -476,7 +472,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/linearLayout9"
+                    android:background="@color/box10"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -495,16 +491,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Milch- und Eierprodukte"
+                        android:text="@string/text_box10"
                         android:id="@+id/textView10"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -515,7 +511,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/linearLayout10"
+                    android:background="@color/box11"
                     android:padding="10dp">
 
                     <ImageButton
@@ -533,16 +529,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Sonstiges"
+                        android:text="@string/text_box11"
                         android:id="@+id/textView11"
                         android:layout_gravity="bottom|center"
+                        android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp"
-                        android:textStyle="bold" />
+                        android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
