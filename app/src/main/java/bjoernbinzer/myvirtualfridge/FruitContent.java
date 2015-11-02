@@ -7,17 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class VegetableContent extends AppCompatActivity {
+public class FruitContent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vegetable_content);
+        setContentView(R.layout.activity_fruit_content);
 
         Intent intent = getIntent();
 
-        Button vegetableButton = (Button)findViewById(R.id.leftUpperFridge);
-        vegetableButton.setOnClickListener(new Button.OnClickListener() {
+        Button fruitButton = (Button)findViewById(R.id.leftUpperMiddleFridge);
+        fruitButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openVegetableContent(view);
