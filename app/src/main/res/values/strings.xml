@@ -16,6 +16,9 @@
     <string name="item_uom_hint">kg</string>
     <string name="title_uom_dialog">Einheit wählen:</string>
     <string name="ToastMessage">Bitte füllen Sie alle Felder aus</string>
+    <string name="gemueseText">Gemüse</string>
+    <string name="getreideText">Getreide- und Kornprodukte</string>
+    <string name="snackText">Snacks</string>
 
     <string-array name="category">
         <item>Obst</item>
