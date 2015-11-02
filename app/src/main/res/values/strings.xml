@@ -2,4 +2,32 @@
     <string name="app_name">MyVirtualFridge</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_fridge_item">AddFridgeItem</string>
+
+    <string name="item_product">Produkt:</string>
+    <string name="item_durability">Mind. haltbar bis:</string>
+    <string name="item_quantity">Menge:</string>
+    <string name="item_uom">Einheit:</string>
+    <string name="item_price">Preis:</string>
+    <string name="item_category">Kategorie:</string>
+    <string name="price_optional">Optional</string>
+
+    <string name="button_neutral">Hinzufügen</string>
+    <string name="title_activity_dialog_">Dialog_Activity</string>
+    <string name="item_uom_hint">kg</string>
+    <string name="title_uom_dialog">Einheit wählen:</string>
+    <string name="ToastMessage">Bitte füllen Sie alle Felder aus</string>
+
+    <string-array name="category">
+        <item>Obst</item>
+        <item>Gemüse</item>
+        <item>Fleisch und Fisch</item>
+        <item>Milch- und Eierprodukte</item>
+        <item>Tiefkühlprodukte</item>
+        <item>Getreideprodukte</item>
+        <item>Gewürze</item>
+        <item>Getränke</item>
+        <item>Snacks</item>
+        <item>Sonstiges</item>
+    </string-array>
+
 </resources>

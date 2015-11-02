@@ -1,5 +1,6 @@
 package bjoernbinzer.myvirtualfridge;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -23,10 +24,10 @@ public class StartActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                openAddFridgeItem(view);
             }
         });
+        FridgeDB.createFridgeDB(this);
     }
 
     @Override
