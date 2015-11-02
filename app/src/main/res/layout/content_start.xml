@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="#64dd17"
+            android:background="@color/leftUpperFridge"
             android:layout_marginRight="8dp"
             android:onClick="openVegetableContent"
             android:padding="10dp"
@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 android:singleLine="false"
                 android:textIsSelectable="false"
-                android:textColor="#5d4037"
+                android:textColor="@color/categoryTextView"
                 android:gravity="bottom|center"
                 android:layout_margin="2dp"
                 android:clickable="false"
@@ -78,7 +78,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="#fdbc0a"
+            android:background="@color/middleUpperFridge"
             android:padding="8dp"
             android:onClick="openFruitContent"
             android:nestedScrollingEnabled="true"
@@ -107,7 +107,7 @@
                 android:textStyle="bold"
                 android:singleLine="false"
                 android:textIsSelectable="false"
-                android:textColor="#5d4037"
+                android:textColor="@color/categoryTextView"
                 android:gravity="bottom|center"
                 android:layout_margin="2dp"
                 android:clickable="false"
@@ -123,7 +123,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="false"
-                    android:background="#d50000"
+                    android:background="@color/rightUpperFridge"
                     android:layout_marginLeft="8dp"
                     android:padding="8dp"
                     android:focusable="false"
@@ -154,7 +154,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp"
                         android:clickable="false"
@@ -170,7 +170,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ccdfee" >
+        android:background="@color/upperSpaceSection" >
 
         <Space
             android:layout_width="20px"
@@ -193,7 +193,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#03a9f4"
+                    android:background="@color/linearLayout2"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -219,7 +219,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -232,7 +232,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ce93d8"
+                    android:background="@color/linearLayout3"
                     android:padding="10dp">
 
                     <ImageButton
@@ -257,7 +257,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -270,7 +270,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#00e5ff"
+                    android:background="@color/linearLayout4"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
@@ -296,7 +296,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -333,7 +333,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#cddc39"
+                    android:background="@color/milchUndEierLayout"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -358,7 +358,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp"
                         android:text="Saucen, Dressings, Öle" />
@@ -372,7 +372,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ffff00"
+                    android:background="@color/getreideLayout"
                     android:padding="10dp">
 
                     <ImageButton
@@ -397,7 +397,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -410,7 +410,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#ff80ab"
+                    android:background="@color/leeresLayout"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
@@ -436,7 +436,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -472,7 +472,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#b0bec5"
+                    android:background="@color/linearLayout9"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -498,7 +498,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
@@ -511,7 +511,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="#1de9b6"
+                    android:background="@color/linearLayout10"
                     android:padding="10dp">
 
                     <ImageButton
@@ -536,7 +536,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="2"
-                        android:textColor="#5d4037"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
