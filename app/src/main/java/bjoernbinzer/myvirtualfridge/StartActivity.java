@@ -33,19 +33,19 @@ public class StartActivity extends AppCompatActivity {
         });
         FridgeDB.createFridgeDB(this);
 
-        Button vegetableButton = (Button)findViewById(R.id.leftUpperFridge);
-        vegetableButton.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openVegetableContent(view);
-            }
-        });
-
-        Button fruitButton = (Button)findViewById(R.id.leftUpperMiddleFridge);
-        fruitButton.setOnClickListener(new Button.OnClickListener() {
+        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.leftUpperMiddleFridge);
+        fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFruitContent(view);
+            }
+        });
+
+        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.leftUpperMiddleFridge);
+        meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMeatFishContent(view);
             }
         });
 
@@ -84,7 +84,11 @@ public class StartActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openFruitContent(View view) {
-        Intent intent = new Intent(this, VegetableContent.class);
+        Intent intent = new Intent(this, FruitContent.class);
+        startActivity(intent);
+    }
+    public void openMeatFishContent(View view) {
+        Intent intent = new Intent(this, MeatFishContent.class);
         startActivity(intent);
     }
 }

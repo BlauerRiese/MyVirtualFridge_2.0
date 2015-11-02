@@ -28,12 +28,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:clickable="false"
+            android:clickable="true"
             android:contextClickable="false"
             android:background="#64dd17"
             android:layout_marginRight="8dp"
             android:onClick="openVegetableContent"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:focusable="true">
 
             <ImageButton
                 android:id="@+id/imageButtonGemüse"
@@ -45,7 +46,8 @@
                 tools:ignore="ContentDescription"
                 android:visibility="visible"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:focusable="false" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
@@ -62,7 +64,9 @@
                 android:layout_margin="2dp"
                 android:clickable="false"
                 android:visibility="visible"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:contextClickable="false"
+                android:focusable="false" />
 
         </LinearLayout>
 
@@ -73,9 +77,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
-            android:contextClickable="true"
+            android:contextClickable="false"
             android:background="#fdbc0a"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:onClick="openFruitContent"
+            android:nestedScrollingEnabled="true"
+            android:focusable="true">
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -85,7 +92,10 @@
                 android:layout_weight="1"
                 tools:ignore="ContentDescription"
                 android:background="@drawable/banane"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusable="false" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
@@ -99,7 +109,10 @@
                 android:textIsSelectable="false"
                 android:textColor="#5d4037"
                 android:gravity="bottom|center"
-                android:layout_margin="2dp" />
+                android:layout_margin="2dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusable="false" />
         </LinearLayout>
 
                 <LinearLayout
@@ -109,10 +122,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="true"
+                    android:contextClickable="false"
                     android:background="#d50000"
                     android:layout_marginLeft="8dp"
-                    android:padding="8dp">
+                    android:padding="8dp"
+                    android:focusable="true">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -124,7 +138,8 @@
                         android:contextClickable="false"
                         android:padding="12dp"
                         android:layout_marginBottom="5dp"
-                        android:background="@drawable/fischfleisch" />
+                        android:background="@drawable/fischfleisch"
+                        android:focusable="false" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -138,7 +153,10 @@
                         android:textIsSelectable="false"
                         android:textColor="#5d4037"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp" />
+                        android:layout_margin="2dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="false" />
 
                 </LinearLayout>
 

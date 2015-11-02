@@ -8,25 +8,4 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class VegetableContent extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vegetable_content);
-
-        Intent intent = getIntent();
-
-        Button vegetableButton = (Button)findViewById(R.id.leftUpperFridge);
-        vegetableButton.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openVegetableContent(view);
-            }
-        });
-    }
-
-    public void openVegetableContent(View view) {
-        Intent intent = new Intent(this, VegetableContent.class);
-        startActivity(intent);
-    }
 }
