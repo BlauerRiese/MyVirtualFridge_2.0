@@ -32,7 +32,8 @@ public class StartActivity extends AppCompatActivity {
         LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.linearLayoutVegetables);
         vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
-            public void onClick(View view) {openVegetableContent(view);
+            public void onClick(View view) {
+                openVegetableContent(view);
             }
         });
 
@@ -49,6 +50,14 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openMeatFishContent(view);
+            }
+        });
+
+        LinearLayout beveragesButton = (LinearLayout)findViewById(R.id.linearLayoutBeverages);
+        beveragesButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBeveragesContent(view);
             }
         });
 
@@ -87,11 +96,15 @@ public class StartActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openFruitContent(View view) {
-        Intent intent = new Intent(this, FruitContent.class);
+        Intent intent = new Intent(this, GroupContents.FruitContent.class);
         startActivity(intent);
     }
     public void openMeatFishContent(View view) {
-        Intent intent = new Intent(this, MeatFishContent.class);
+        Intent intent = new Intent(this, GroupContents.MeatFishContent.class);
+        startActivity(intent);
+    }
+    public void openBeveragesContent(View view) {
+        Intent intent = new Intent(this, GroupContents.BeveragesContent.class);
         startActivity(intent);
     }
 }
