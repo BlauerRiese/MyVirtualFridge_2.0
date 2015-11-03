@@ -121,7 +121,55 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 category = parent.getItemAtPosition(position).toString();
                 FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
                 Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                switch(category){
+
+                if (category.equals(getString(R.string.text_box01))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#64dd17")));
+                    toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
+                }
+                else if (category.equals(getString(R.string.text_box02))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#fdbc0a")));
+                    toolbar.setBackgroundColor(Color.parseColor("#fdbc0a"));
+                }
+                else if (category.equals(getString(R.string.text_box03))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#d50000")));
+                    toolbar.setBackgroundColor(Color.parseColor("#d50000"));
+                }
+                else if (category.equals(getString(R.string.text_box04))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#03a9f4")));
+                    toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
+                }
+                else if (category.equals(getString(R.string.text_box05))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ce93d8")));
+                    toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
+                }
+                else if (category.equals(getString(R.string.text_box06))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00e5ff")));
+                    toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
+                }
+                else if (category.equals(getString(R.string.text_box07))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#cddc39")));
+                    toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
+                }
+                else if (category.equals(getString(R.string.text_box08))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ffff00")));
+                    toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
+                }
+                else if (category.equals(getString(R.string.text_box09))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff80ab")));
+                    toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
+                }
+                else if (category.equals(getString(R.string.text_box10))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#b0bec5")));
+                    toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
+                }
+                else if (category.equals(getString(R.string.text_box11))) {
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1de9b6")));
+                    toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
+                }
+
+
+
+                /**switch(category){
                     case "Gemüse":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#64dd17")));
                         toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
@@ -163,7 +211,7 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                         toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
                         break;
 
-                }
+                }**/
 
 
             }

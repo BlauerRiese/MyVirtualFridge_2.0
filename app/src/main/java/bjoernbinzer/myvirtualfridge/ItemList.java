@@ -22,41 +22,38 @@ public class ItemList extends AppCompatActivity {
         Intent intent = getIntent();
         String button = intent.getStringExtra("Button");
 
-        switch(button){
-            case "Gemüse":
-                toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
-                break;
-            case "Obst":
-                toolbar.setBackgroundColor(Color.parseColor("#fdbc0a"));
-                break;
-            case "Fleisch und Fisch":
-                toolbar.setBackgroundColor(Color.parseColor("#d50000"));
-                break;
-            case "Milch- und Eierprodukte":
-                toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
-                break;
-            case "Tiefkühl":
-                toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
-                break;
-            case "Getreide- und Kornprodukte":
-                toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
-                break;
-            case "Saucen, Dressings, Öle":
-                toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
-                break;
-            case "Gewürze":
-                toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
-                break;
-            case "Getränke":
-                toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
-                break;
-            case "Snacks":
-                toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
-                break;
-            case "Sonstiges":
-                toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
-                break;
-
+        if (button.equals(getString(R.string.text_box01))) {
+            toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
+        }
+        else if (button.equals(getString(R.string.text_box02))) {
+            toolbar.setBackgroundColor(Color.parseColor("#fdbc0a"));
+        }
+        else if (button.equals(getString(R.string.text_box03))) {
+            toolbar.setBackgroundColor(Color.parseColor("#d50000"));
+        }
+        else if (button.equals(getString(R.string.text_box04))) {
+            toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
+        }
+        else if (button.equals(getString(R.string.text_box05))) {
+            toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
+        }
+        else if (button.equals(getString(R.string.text_box06))) {
+            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
+        }
+        else if (button.equals(getString(R.string.text_box07))) {
+            toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
+        }
+        else if (button.equals(getString(R.string.text_box08))) {
+            toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));;
+        }
+        else if (button.equals(getString(R.string.text_box09))) {
+            toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
+        }
+        else if (button.equals(getString(R.string.text_box10))) {
+            toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
+        }
+        else if (button.equals(getString(R.string.text_box11))) {
+            toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
         }
     }
 }
