@@ -32,25 +32,25 @@ public class ItemList extends AppCompatActivity {
             toolbar.setBackgroundColor(Color.parseColor("#d50000"));
         }
         else if (button.equals(getString(R.string.text_box04))) {
-            toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
+            toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
         }
         else if (button.equals(getString(R.string.text_box05))) {
-            toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
+            toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
         }
         else if (button.equals(getString(R.string.text_box06))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
+            toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
         }
         else if (button.equals(getString(R.string.text_box07))) {
             toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
         }
         else if (button.equals(getString(R.string.text_box08))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));;
+            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));;
         }
         else if (button.equals(getString(R.string.text_box09))) {
-            toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
+            toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
         }
         else if (button.equals(getString(R.string.text_box10))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
+            toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
         }
         else if (button.equals(getString(R.string.text_box11))) {
             toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
