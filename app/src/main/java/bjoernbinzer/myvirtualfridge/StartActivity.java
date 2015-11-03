@@ -20,6 +20,10 @@ public class StartActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FridgeDB.createFridgeDB(this);
+        Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +31,6 @@ public class StartActivity extends AppCompatActivity {
                 openAddFridgeItem(view);
             }
         });
-        FridgeDB.createFridgeDB(this);
 
         LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.linearLayoutVegetables);
         vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
@@ -60,8 +63,6 @@ public class StartActivity extends AppCompatActivity {
                 openBeveragesContent(view);
             }
         });
-
-        Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
     }
 
 
