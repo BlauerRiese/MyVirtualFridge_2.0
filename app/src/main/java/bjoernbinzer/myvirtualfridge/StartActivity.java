@@ -45,7 +45,7 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
-        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.linearLayoutMeatFish);
+        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.linearLayoutMeat);
         meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -435,7 +435,7 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="0"
-                        android:textColor="@color/categoryTextView"
+                        android:textColor="#ffffff"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
