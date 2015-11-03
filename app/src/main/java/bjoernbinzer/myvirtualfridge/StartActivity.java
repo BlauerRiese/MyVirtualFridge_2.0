@@ -1,17 +1,15 @@
 package bjoernbinzer.myvirtualfridge;
 
-import android.app.FragmentManager;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -31,9 +29,33 @@ public class StartActivity extends AppCompatActivity {
         });
         FridgeDB.createFridgeDB(this);
 
-        Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
+        LinearLayout vegetableButton = (LinearLayout)findViewById(R.id.leftUpperFridge);
+        vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openVegetableContent(view);
+            }
+        });
 
+        LinearLayout fruitButton = (LinearLayout)findViewById(R.id.middleUpperFridge);
+        fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFruitContent(view);
+            }
+        });
+
+        LinearLayout meatFishButton = (LinearLayout)findViewById(R.id.rightUpperFridge);
+        meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMeatFishContent(view);
+            }
+        });
+
+        Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -59,6 +81,18 @@ public class StartActivity extends AppCompatActivity {
 
     public void openAddFridgeItem(View view) {
         Intent intent = new Intent(this, AddFridgeItem.class);
+        startActivity(intent);
+    }
+    public void openVegetableContent(View view) {
+        Intent intent = new Intent(this, VegetableContent.class);
+        startActivity(intent);
+    }
+    public void openFruitContent(View view) {
+        Intent intent = new Intent(this, FruitContent.class);
+        startActivity(intent);
+    }
+    public void openMeatFishContent(View view) {
+        Intent intent = new Intent(this, MeatFishContent.class);
         startActivity(intent);
     }
 }

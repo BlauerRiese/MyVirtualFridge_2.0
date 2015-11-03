@@ -3,4 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#3F51B5</color>
+
+    <color name="categoryTextView">#5d4037</color>
+    <color name="upperSpaceSection">#ccdfee</color>
+
+    <color name="box01">#64dd17</color>
+    <color name="box02">#fdbc0a</color>
+    <color name="box03">#d50000</color>
+    <color name="box04">#03a9f4</color>
+    <color name="box05">#ce93d8</color>
+    <color name="box06">#00e5ff</color>
+    <color name="box07">#cddc39</color>
+    <color name="box08">#ffff00</color>
+    <color name="box09">#ff80ab</color>
+    <color name="box10">#b0bec5</color>
+    <color name="box11">#1de9b6</color>
 </resources>
