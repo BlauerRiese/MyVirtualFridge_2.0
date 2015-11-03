@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#3F51B5</color>
 
+    <color name="background">#eff6fc</color>
     <color name="categoryTextView">#5d4037</color>
-    <color name="upperSpaceSection">#ccdfee</color>
+    <color name="spaceSection">#ccdfee</color>
 
     <color name="box01">#64dd17</color>
     <color name="box02">#fdbc0a</color>
@@ -18,4 +19,6 @@
     <color name="box09">#ff80ab</color>
     <color name="box10">#b0bec5</color>
     <color name="box11">#1de9b6</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

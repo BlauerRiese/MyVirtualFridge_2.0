@@ -45,4 +45,9 @@
         <item>Sonstiges</item>
     </string-array>
 
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="contentDescription">My Virtual Fridge</string>
 </resources>
