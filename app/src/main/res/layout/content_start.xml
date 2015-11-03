@@ -168,7 +168,7 @@
         android:baselineAligned="false">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout2"
+                    android:id="@+id/linearLayoutBeverages"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -179,23 +179,20 @@
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
-                    <ImageButton
-                        android:id="@+id/imageButton4"
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_gravity="top|center"
-                        android:clickable="false"
-                        android:contextClickable="false"
+                        android:id="@+id/imageViewBeverages"
                         android:layout_weight="1"
-                        android:padding="12dp"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="top|center" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box04"
-                        android:id="@+id/textView4"
+                        android:id="@+id/textViewBeverages"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
@@ -207,7 +204,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout3"
+                    android:id="@+id/linearLayoutSpicery"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -217,23 +214,20 @@
                     android:background="@color/box05"
                     android:padding="10dp">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageButton5"
-                        android:layout_gravity="top|center"
+                        android:id="@+id/imageViewSpicery"
                         android:layout_weight="1"
-                        android:clickable="false"
-                        android:contextClickable="false"
-                        android:padding="12dp"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="top|center" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box05"
-                        android:id="@+id/textView5"
+                        android:id="@+id/textViewSpicery"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
@@ -256,6 +250,14 @@
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/imageViewFrozen"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="top|center" />
+
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
@@ -273,7 +275,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box06"
-                        android:id="@+id/textView6"
+                        android:id="@+id/textViewFrozen"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
