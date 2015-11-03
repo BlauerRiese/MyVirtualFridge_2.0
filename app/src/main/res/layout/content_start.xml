@@ -10,9 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="#eff6fc"
-    tools:context=".StartActivity"
-    android:id="@+id/linearLayoutOverall">
+    android:background="@color/background"
+    tools:context=".StartActivity">
 
     <LinearLayout
         android:id="@+id/firstFridgeRow"
@@ -24,7 +23,7 @@
         android:baselineAligned="false">
 
         <LinearLayout
-            android:id="@+id/linearLayoutVegetables"
+            android:id="@+id/leftUpperFridge"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -37,15 +36,17 @@
             android:padding="10dp"
             android:focusable="false">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/imageButtonGemüse"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:id="@+id/imageViewVegetables"
                 android:layout_gravity="top|center"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:clickable="false"
                 android:contextClickable="false"
+                tools:ignore="ContentDescription"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
                 android:focusable="false" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
@@ -53,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/text_box01"
-                android:id="@+id/textViewVegetables"
+                android:id="@+id/textView1"
                 android:layout_gravity="bottom|center"
                 android:textStyle="bold"
                 android:singleLine="false"
@@ -63,13 +64,14 @@
                 android:layout_margin="2dp"
                 android:clickable="false"
                 android:visibility="visible"
+                android:layout_weight="1"
                 android:contextClickable="false"
                 android:focusable="false" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayoutFruits"
+            android:id="@+id/middleUpperFridge"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -82,24 +84,25 @@
             android:nestedScrollingEnabled="true"
             android:focusable="false">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:id="@+id/imageViewFruits"
                 android:layout_gravity="top|center"
-                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
+                tools:ignore="ContentDescription"
+                android:background="@drawable/banane"
+                android:layout_marginBottom="5dp"
                 android:clickable="false"
                 android:contextClickable="false"
-                android:focusable="false"
-                android:background="@drawable/banane" />
+                android:focusable="false" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/text_box02"
-                android:id="@+id/textViewFruits"
+                android:id="@+id/textView2"
                 android:layout_gravity="bottom|center"
                 android:textStyle="bold"
                 android:singleLine="false"
@@ -113,7 +116,7 @@
         </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutMeatFish"
+                    android:id="@+id/rightUpperFridge"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -127,24 +130,26 @@
                     android:onClick="openMeatFishContent"
                     android:nestedScrollingEnabled="true">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewMeatFish"
+                        android:id="@+id/imageButton2"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fischfleisch"
                         android:focusable="false"
-                        android:background="@drawable/fischfleisch" />
+                        android:contentDescription="nulll" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box03"
-                        android:id="@+id/textViewMeatFish"
+                        android:id="@+id/textView3"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
@@ -165,7 +170,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/upperSpaceSection" >
+        android:background="@color/spaceSection" >
 
         <Space
             android:layout_width="20px"
@@ -181,106 +186,104 @@
         android:baselineAligned="false">
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutBeverages"
+                    android:id="@+id/linearLayout2"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box04"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/imageButton4"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewBeverages"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
-                        android:background="@drawable/getraenke" />
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box04"
-                        android:id="@+id/textViewBeverages"
+                        android:id="@+id/textView4"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutSpicery"
+                    android:id="@+id/linearLayout3"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box05"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewSpicery"
+                        android:id="@+id/imageButton5"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false" />
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box05"
-                        android:id="@+id/textViewSpicery"
+                        android:id="@+id/textView5"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutFrozen"
+                    android:id="@+id/linearLayout4"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box06"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewFrozen"
+                        android:id="@+id/imageButton6"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp"
                         android:background="@drawable/gefrier" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
@@ -288,7 +291,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box06"
-                        android:id="@+id/textViewFrozen"
+                        android:id="@+id/textView6"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
@@ -305,7 +308,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-            android:background="#ccdfee"
+            android:background="@color/spaceSection"
             android:baselineAligned="false">
 
             <Space
@@ -323,38 +326,38 @@
             android:baselineAligned="false">
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutDressings"
+                    android:id="@+id/MilchUndEierLayout"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box07"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/MilchUndEierImageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewDressings"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false" />
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:id="@+id/textViewDressings"
+                        android:id="@+id/textView7"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp"
@@ -362,77 +365,77 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutCereals"
+                    android:id="@+id/GetreideLayout"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box08"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewCereals"
+                        android:id="@+id/getreideImageButton"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false" />
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box08"
-                        android:id="@+id/textViewCereals"
+                        android:id="@+id/textView8"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
-            <LinearLayout
-                    android:id="@+id/linearLayoutSnacks"
+                <LinearLayout
+                    android:id="@+id/leeresLayout"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box09"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:id="@+id/imageViewSnacks"
-                    android:layout_gravity="top|center"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:clickable="false"
-                    android:contextClickable="false"
-                    android:focusable="false" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/imageButton9"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
-                <bjoernbinzer.myvirtualfridge.CategoryTextView
+                    <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box09"
-                        android:id="@+id/textViewSnacks"
+                        android:id="@+id/textView9"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -444,7 +447,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ccdfee">
+            android:background="@color/spaceSection">
 
             <Space
                 android:layout_width="20px"
@@ -462,84 +465,84 @@
             android:layout_weight="1">
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutMilk"
+                    android:id="@+id/linearLayout9"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box10"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/imageButton10"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewMilk"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false" />
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box10"
-                        android:id="@+id/textViewMilk"
+                        android:id="@+id/textView10"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutOther"
+                    android:id="@+id/linearLayout10"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:contextClickable="false"
+                    android:contextClickable="true"
                     android:background="@color/box11"
-                    android:padding="10dp"
-                    android:focusable="false">
+                    android:padding="10dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:id="@+id/imageViewOther"
+                        android:id="@+id/imageButton11"
                         android:layout_gravity="top|center"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:clickable="false"
                         android:contextClickable="false"
-                        android:focusable="false" />
+                        android:padding="12dp"
+                        android:layout_marginBottom="5dp" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box11"
-                        android:id="@+id/textViewOther"
+                        android:id="@+id/textView11"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
+                        android:layout_weight="2"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutEmpty"
+                    android:id="@+id/linearLayout11"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -547,9 +550,7 @@
                     android:contextClickable="false"
                     android:visibility="visible"
                     android:background="#eff6fc"
-                    android:layout_marginLeft="8dp"
-                    android:clickable="false"
-                    android:focusable="false">
+                    android:layout_marginLeft="8dp">
 
 
                 </LinearLayout>
