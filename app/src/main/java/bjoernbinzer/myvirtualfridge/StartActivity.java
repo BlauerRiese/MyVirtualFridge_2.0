@@ -5,15 +5,23 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
+    private ListView mDrawerList;
+    private ArrayAdapter<String> mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +29,9 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mDrawerList = (ListView) findViewById(R.id.navList);
+        addDrawerItems();
 
         FridgeDB.createFridgeDB(this);
         Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
@@ -132,6 +143,12 @@ public class StartActivity extends AppCompatActivity {
                 openListItem(view, category);
             }
         });
+        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplication(), "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
@@ -183,4 +200,11 @@ public class StartActivity extends AppCompatActivity {
         intent.putExtra(new String("Button"), category);
         startActivity(intent);
     }
+    public void addDrawerItems(){
+        String[] array = { "Einkaufsliste", "Hinzufügen"};
+        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, array);
+        mDrawerList.setAdapter(mAdapter);
+    }
+
+
 }
