@@ -51,4 +51,6 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="contentDescription">My Virtual Fridge</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_item_list">ItemList</string>
 </resources>
