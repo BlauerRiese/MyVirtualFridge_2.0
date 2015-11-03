@@ -15,5 +15,7 @@ public class VegetableContent extends AppCompatActivity {
         setContentView(R.layout.activity_vegetable_content);
 
         Intent intent = getIntent();
+
+
     }
 }
