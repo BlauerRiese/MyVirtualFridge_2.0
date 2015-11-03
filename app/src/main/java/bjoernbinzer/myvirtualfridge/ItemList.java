@@ -21,6 +21,7 @@ public class ItemList extends AppCompatActivity {
 
         Intent intent = getIntent();
         String button = intent.getStringExtra("Button");
+        getSupportActionBar().setTitle(button);
 
         if (button.equals(getString(R.string.text_box01))) {
             toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
@@ -44,7 +45,7 @@ public class ItemList extends AppCompatActivity {
             toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
         }
         else if (button.equals(getString(R.string.text_box08))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));;
+            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
         }
         else if (button.equals(getString(R.string.text_box09))) {
             toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));

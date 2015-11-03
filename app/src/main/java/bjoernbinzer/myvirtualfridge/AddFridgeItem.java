@@ -48,6 +48,7 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Produkt hinzufügen");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
