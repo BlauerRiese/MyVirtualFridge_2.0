@@ -1,5 +1,6 @@
 package bjoernbinzer.myvirtualfridge;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -36,7 +38,8 @@ public class StartActivity extends AppCompatActivity {
         vegetableButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openVegetableContent(view);
+                String category = ((TextView) findViewById(R.id.textViewVegetables)).getText().toString();
+                openListItem(view, category);
             }
         });
 
@@ -44,7 +47,8 @@ public class StartActivity extends AppCompatActivity {
         fruitButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openFruitContent(view);
+                String category = ((TextView) findViewById(R.id.textViewFruits)).getText().toString();
+                openListItem(view, category);
             }
         });
 
@@ -52,7 +56,8 @@ public class StartActivity extends AppCompatActivity {
         meatFishButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMeatFishContent(view);
+                String category = ((TextView) findViewById(R.id.textViewMeat)).getText().toString();
+                openListItem(view, category);
             }
         });
 
@@ -60,7 +65,71 @@ public class StartActivity extends AppCompatActivity {
         beveragesButton.setOnClickListener(new LinearLayout.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openBeveragesContent(view);
+                String category = ((TextView) findViewById(R.id.textViewBeverages)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout spiceryButton = (LinearLayout)findViewById(R.id.linearLayoutSpicery);
+        spiceryButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewSpicery)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout frozenButton = (LinearLayout)findViewById(R.id.linearLayoutFrozen);
+        frozenButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewFrozen)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout dressingsButton = (LinearLayout)findViewById(R.id.linearLayoutDressings);
+        dressingsButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewDressings)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout cerealsButton = (LinearLayout)findViewById(R.id.linearLayoutCereals);
+        cerealsButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewCereals)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout snacksButton = (LinearLayout)findViewById(R.id.linearLayoutSnacks);
+        snacksButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewSnacks)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout milkButton = (LinearLayout)findViewById(R.id.linearLayoutMilk);
+        milkButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewMilk)).getText().toString();
+                openListItem(view, category);
+            }
+        });
+
+        LinearLayout othersButton = (LinearLayout)findViewById(R.id.linearLayoutOthers);
+        othersButton.setOnClickListener(new LinearLayout.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String category = ((TextView) findViewById(R.id.textViewOthers)).getText().toString();
+                openListItem(view, category);
             }
         });
     }
@@ -106,6 +175,12 @@ public class StartActivity extends AppCompatActivity {
     }
     public void openBeveragesContent(View view) {
         Intent intent = new Intent(this, GroupContents.BeveragesContent.class);
+        startActivity(intent);
+    }
+
+    public void openListItem(View view, String category) {
+        Intent intent = new Intent(this, ItemList.class);
+        intent.putExtra(new String("Button"), category);
         startActivity(intent);
     }
 }
