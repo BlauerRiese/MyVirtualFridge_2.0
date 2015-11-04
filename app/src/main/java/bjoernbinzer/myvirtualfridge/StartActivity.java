@@ -34,6 +34,9 @@ public class StartActivity extends AppCompatActivity {
         addDrawerItems();
 
         FridgeDB.createFridgeDB(this);
+        //FridgeDB.deleteTable();
+
+
         Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
 
 
@@ -176,22 +179,6 @@ public class StartActivity extends AppCompatActivity {
 
     public void openAddFridgeItem(View view) {
         Intent intent = new Intent(this, AddFridgeItem.class);
-        startActivity(intent);
-    }
-    public void openVegetableContent(View view) {
-        Intent intent = new Intent(this, VegetableContent.class);
-        startActivity(intent);
-    }
-    public void openFruitContent(View view) {
-        Intent intent = new Intent(this, GroupContents.FruitContent.class);
-        startActivity(intent);
-    }
-    public void openMeatFishContent(View view) {
-        Intent intent = new Intent(this, GroupContents.MeatFishContent.class);
-        startActivity(intent);
-    }
-    public void openBeveragesContent(View view) {
-        Intent intent = new Intent(this, GroupContents.BeveragesContent.class);
         startActivity(intent);
     }
 

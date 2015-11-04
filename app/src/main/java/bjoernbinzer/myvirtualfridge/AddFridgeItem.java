@@ -87,7 +87,7 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 Spinner spinnerCategory = (Spinner) findViewById(R.id.spinner_category);
                 String category = spinnerCategory.getSelectedItem().toString();
 
-                FridgeDB.insertEntry(product, durability, quantity, uom, price, category);
+                long rowID = FridgeDB.insertEntry(product, durability, quantity, uom, price, category);
 
                 finish();
             }

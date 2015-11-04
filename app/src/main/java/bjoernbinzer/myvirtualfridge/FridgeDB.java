@@ -13,6 +13,8 @@ import android.database.sqlite.SQLiteDatabase;
 public class FridgeDB {
 
     private static FridgeDBHelper mDBHelper;
+    private static final String SQL_DELETE_ENTRIES =
+            "DROP TABLE IF EXISTS " + FridgeDBHelper.TABLE_NAME;
 
     public static void createFridgeDB (Context context){
         if (mDBHelper == null ) mDBHelper = new FridgeDBHelper(context);
@@ -38,4 +40,10 @@ public class FridgeDB {
         long newRowId;
         return newRowId = db.insert(FridgeDBHelper.TABLE_NAME, null,values);
     }
+
+    /**public static  void deleteTable() {
+        SQLiteDatabase db = mDBHelper.getWritableDatabase();
+        db.execSQL(SQL_DELETE_ENTRIES);
+        mDBHelper.onCreate(db);
+    }**/
 }
