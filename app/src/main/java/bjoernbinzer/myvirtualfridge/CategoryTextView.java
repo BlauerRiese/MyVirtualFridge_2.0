@@ -1,6 +1,7 @@
 package bjoernbinzer.myvirtualfridge;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public class CategoryTextView extends TextView {
    private void init() {
        Typeface robotoThin = Typeface.createFromAsset(getContext().getAssets(), "fonts/Roboto-Thin.ttf");
        setTypeface(robotoThin);
+       setTextColor(Color.WHITE);
    }
 
 }

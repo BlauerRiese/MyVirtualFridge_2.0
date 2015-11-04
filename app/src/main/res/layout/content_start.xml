@@ -30,10 +30,11 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@color/box01"
             android:layout_marginRight="8dp"
             android:padding="10dp"
-            android:focusable="false">
+            android:focusable="false"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/box01">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -75,9 +76,9 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@color/box02"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/box02"
             android:padding="10dp"
-            android:onClick="openFruitContent"
             android:nestedScrollingEnabled="true"
             android:focusable="false">
 
@@ -120,7 +121,8 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="false"
-                    android:background="@color/box03"
+                    android:background="@drawable/roundcorner"
+                    android:backgroundTint="@color/box03"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp"
                     android:focusable="false"
@@ -188,7 +190,8 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/box04"
+                    android:background="@drawable/roundcorner"
+                    android:backgroundTint="@color/box04"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
@@ -228,7 +231,8 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/box05"
+                    android:background="@drawable/roundcorner"
+                    android:backgroundTint="@color/box05"
                     android:padding="10dp">
 
                     <ImageView
@@ -266,7 +270,8 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/box06"
+                    android:background="@drawable/roundcorner"
+                    android:backgroundTint="@color/box06"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp">
 
@@ -329,7 +334,8 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@color/box07"
+                    android:background="@drawable/roundcorner"
+                    android:backgroundTint="@color/box07"
                     android:layout_marginRight="8dp"
                     android:padding="10dp">
 
