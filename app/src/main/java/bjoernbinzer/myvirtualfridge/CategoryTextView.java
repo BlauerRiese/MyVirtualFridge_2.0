@@ -28,9 +28,8 @@ public class CategoryTextView extends TextView {
     }
 
    private void init() {
-       Typeface robotoThin = Typeface.createFromAsset(getContext().getAssets(), "fonts/Roboto-Thin.ttf");
-       setTypeface(robotoThin);
-       setTextColor(Color.WHITE);
+       Typeface robotoRegular = Typeface.createFromAsset(getContext().getAssets(), "fonts/Roboto-Regular.ttf");
+       setTypeface(robotoRegular);
    }
 
 }

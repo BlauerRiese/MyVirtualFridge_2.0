@@ -5,7 +5,7 @@
     <color name="colorAccent">#3F51B5</color>
 
     <color name="background">#eff6fc</color>
-    <color name="categoryTextView">#5d4037</color>
+    <color name="categoryTextView">#ffffff</color>
     <color name="spaceSection">#ccdfee</color>
 
     <color name="box01">#64dd17</color>

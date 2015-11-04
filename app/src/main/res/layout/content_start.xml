@@ -34,13 +34,14 @@
             android:padding="10dp"
             android:focusable="false"
             android:background="@drawable/roundcorner"
-            android:backgroundTint="@color/box01">
+            android:backgroundTint="@color/box01"
+            android:weightSum="3">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:id="@+id/imageViewVegetables"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
                 android:layout_marginRight="2dp"
@@ -49,7 +50,7 @@
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/text_box01"
                 android:id="@+id/textViewVegetables"
@@ -57,14 +58,14 @@
                 android:textStyle="bold"
                 android:singleLine="false"
                 android:textIsSelectable="false"
-                android:textColor="@color/categoryTextView"
                 android:gravity="bottom|center"
                 android:layout_margin="2dp"
                 android:clickable="false"
                 android:visibility="visible"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:contextClickable="false"
-                android:focusable="false" />
+                android:focusable="false"
+                android:textColor="@color/categoryTextView" />
 
         </LinearLayout>
 
@@ -80,13 +81,14 @@
             android:backgroundTint="@color/box02"
             android:padding="10dp"
             android:nestedScrollingEnabled="true"
-            android:focusable="false">
+            android:focusable="false"
+            android:weightSum="4">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:id="@+id/imageViewFruits"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
                 android:background="@drawable/banane"
@@ -96,7 +98,7 @@
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/text_box02"
                 android:id="@+id/textViewFruits"
@@ -110,7 +112,7 @@
                 android:clickable="false"
                 android:contextClickable="false"
                 android:focusable="false"
-                android:layout_weight="0" />
+                android:layout_weight="1" />
         </LinearLayout>
 
                 <LinearLayout
@@ -126,13 +128,14 @@
                     android:layout_marginLeft="8dp"
                     android:padding="10dp"
                     android:focusable="false"
-                    android:nestedScrollingEnabled="true">
+                    android:nestedScrollingEnabled="true"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewMeat"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/fischfleisch"
@@ -142,7 +145,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box03"
                         android:id="@+id/textViewMeat"
@@ -156,7 +159,7 @@
                         android:clickable="false"
                         android:contextClickable="false"
                         android:focusable="false"
-                        android:layout_weight="0" />
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 
@@ -193,13 +196,14 @@
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box04"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewBeverages"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/getraenke"
@@ -209,7 +213,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box04"
                         android:id="@+id/textViewBeverages"
@@ -217,7 +221,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -233,13 +237,14 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box05"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewSpicery"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:layout_marginRight="2dp"
@@ -248,7 +253,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box05"
                         android:id="@+id/textViewSpicery"
@@ -256,7 +261,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -273,13 +278,14 @@
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box06"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewFrozen"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/gefrier"
@@ -289,7 +295,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box06"
                         android:id="@+id/textViewFrozen"
@@ -299,7 +305,8 @@
                         android:textIsSelectable="false"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp" />
+                        android:layout_margin="2dp"
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -337,13 +344,14 @@
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box07"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewDressings"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/gefrier"
@@ -353,14 +361,14 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:id="@+id/textViewDressings"
                         android:layout_gravity="bottom|center"
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp"
@@ -377,13 +385,14 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box08"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewCereals"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/gefrier"
@@ -393,7 +402,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box08"
                         android:id="@+id/textViewCereals"
@@ -401,7 +410,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -418,13 +427,14 @@
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box09"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewSnacks"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/gefrier"
@@ -434,7 +444,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box09"
                         android:id="@+id/textViewSnacks"
@@ -442,7 +452,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="#ffffff"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -482,13 +492,14 @@
                     android:background="@drawable/roundcorner"
                     android:backgroundTint="@color/box10"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:weightSum="3">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:id="@+id/imageViewMilk"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/gefrier"
@@ -498,7 +509,7 @@
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/text_box10"
                         android:id="@+id/textViewMilk"
@@ -506,7 +517,7 @@
                         android:textStyle="bold"
                         android:singleLine="false"
                         android:textIsSelectable="false"
-                        android:layout_weight="0"
+                        android:layout_weight="1"
                         android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
                         android:layout_margin="2dp" />
@@ -522,13 +533,14 @@
                 android:contextClickable="true"
                 android:background="@drawable/roundcorner"
                 android:backgroundTint="@color/box11"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:weightSum="3">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:id="@+id/imageViewOthers"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:layout_marginBottom="5dp"
                     android:layout_gravity="top|center"
                     android:background="@drawable/gefrier"
@@ -538,7 +550,7 @@
 
                 <bjoernbinzer.myvirtualfridge.CategoryTextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="@string/text_box11"
                     android:id="@+id/textViewOthers"
@@ -546,7 +558,7 @@
                     android:textStyle="bold"
                     android:singleLine="false"
                     android:textIsSelectable="false"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:textColor="@color/categoryTextView"
                     android:gravity="bottom|center"
                     android:layout_margin="2dp" />
