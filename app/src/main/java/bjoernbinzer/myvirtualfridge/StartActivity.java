@@ -34,6 +34,9 @@ public class StartActivity extends AppCompatActivity {
         addDrawerItems();
 
         FridgeDB.createFridgeDB(this);
+        //FridgeDB.deleteTable();
+
+
         Typeface robotoRegular = Typeface.createFromAsset(getAssets(),"fonts/Roboto-Regular.ttf");
 
 

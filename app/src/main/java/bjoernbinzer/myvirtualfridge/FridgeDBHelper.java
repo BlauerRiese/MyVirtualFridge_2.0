@@ -17,19 +17,19 @@ public class FridgeDBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_PRODUCT = "product";
     public static final String COLUMN_DURABILITY = "durability";
     public static final String COLUMN_QUANTITY = "quantity";
-    public static final String COLUMN_UOM = "unit of measure";
+    public static final String COLUMN_UOM = "uom";
     public static final String COLUMN_PRICE = "price";
     public static final String COLUMN_CATEGORY = "category";
 
     public static final String SQL_CREATE =
-            "create table " + TABLE_NAME + "(" +
-                    COLUMN_ENTRY_ID + " integer primary key autoincrement, " +
-                    COLUMN_PRODUCT + " text not null, " +
-                    COLUMN_DURABILITY + " date not null, " +
-                    COLUMN_QUANTITY + " double(6,2) not null, " +
-                    COLUMN_UOM + " text not null, " +
-                    COLUMN_PRICE + " double(5,2), " +
-                    COLUMN_CATEGORY + " text not null);";
+            "CREATE TABLE " + TABLE_NAME + " (" +
+                    COLUMN_ENTRY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    COLUMN_PRODUCT + " TEXT NOT NULL," +
+                    COLUMN_DURABILITY + " TEXT NOT NULL," +
+                    COLUMN_QUANTITY + " DOUBLE(6,2) NOT NULL," +
+                    COLUMN_UOM + " TEXT NOT NULL," +
+                    COLUMN_PRICE + " DOUBLE(5,2)," +
+                    COLUMN_CATEGORY + " TEXT NOT NULL);";
 
     public FridgeDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
