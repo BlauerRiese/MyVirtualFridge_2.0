@@ -191,8 +191,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box04"
+                    android:background="@drawable/roundcornerBox04"
                     android:layout_marginRight="8dp"
                     android:padding="10dp"
                     android:weightSum="3">
@@ -233,8 +232,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box05"
+                    android:background="@drawable/roundcornerBox05"
                     android:padding="10dp"
                     android:weightSum="3">
 
@@ -274,8 +272,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box06"
+                    android:background="@drawable/roundcornerBox06"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp"
                     android:weightSum="3">
@@ -340,8 +337,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box07"
+                    android:background="@drawable/roundcornerBox07"
                     android:layout_marginRight="8dp"
                     android:padding="10dp"
                     android:weightSum="3">
@@ -382,8 +378,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box08"
+                    android:background="@drawable/roundcornerBox08"
                     android:padding="10dp"
                     android:weightSum="3">
 
@@ -423,8 +418,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box09"
+                    android:background="@drawable/roundcornerBox09"
                     android:layout_marginLeft="8dp"
                     android:padding="10dp"
                     android:weightSum="3">
@@ -438,7 +432,8 @@
                         android:layout_gravity="top|center"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/Snack" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -487,8 +482,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox01"
-                    android:backgroundTint="@color/box10"
+                    android:background="@drawable/roundcornerBox10"
                     android:layout_marginRight="8dp"
                     android:padding="10dp"
                     android:weightSum="3">
@@ -529,8 +523,7 @@
                 android:layout_weight="1"
                 android:clickable="true"
                 android:contextClickable="true"
-                android:background="@drawable/roundcornerBox01"
-                android:backgroundTint="@color/box11"
+                android:background="@drawable/roundcornerBox11"
                 android:padding="10dp"
                 android:weightSum="3">
 
