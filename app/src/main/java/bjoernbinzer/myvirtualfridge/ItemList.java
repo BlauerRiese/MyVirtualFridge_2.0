@@ -2,6 +2,7 @@ package bjoernbinzer.myvirtualfridge;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -56,5 +57,7 @@ public class ItemList extends AppCompatActivity {
         else if (button.equals(getString(R.string.text_box11))) {
             toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
         }
+
+        Cursor cursor = FridgeDB.getEntries(button);
     }
 }

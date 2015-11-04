@@ -45,7 +45,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginTop="2dp" />
+                android:layout_marginTop="2dp"
+                android:background="@drawable/gemuese1" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
                 android:layout_weight="3"
                 android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
-                android:background="@drawable/banane"
+                android:background="@drawable/fruechteobst"
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="2dp" />
@@ -135,7 +136,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/fischfleisch"
+                        android:background="@drawable/fischfleisch1"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -203,7 +204,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/getraenke"
+                        android:background="@drawable/getraenke1"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -246,7 +247,8 @@
                         android:layout_gravity="top|center"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/gewuerze1" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -285,7 +287,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
+                        android:background="@drawable/tiefkuehl1"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -351,7 +353,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
+                        android:background="@drawable/saucen1"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -392,7 +394,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
+                        android:background="@drawable/korngetreide"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -434,7 +436,6 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -499,7 +500,7 @@
                         android:layout_weight="2"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
+                        android:background="@drawable/eiermilch"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -540,7 +541,7 @@
                     android:layout_weight="2"
                     android:layout_marginBottom="5dp"
                     android:layout_gravity="top|center"
-                    android:background="@drawable/gefrier"
+                    android:background="@drawable/othersonstiges"
                     android:layout_marginRight="2dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp" />

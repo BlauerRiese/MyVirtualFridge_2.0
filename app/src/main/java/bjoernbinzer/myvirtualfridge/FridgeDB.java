@@ -2,6 +2,7 @@ package bjoernbinzer.myvirtualfridge;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
@@ -39,6 +40,25 @@ public class FridgeDB {
         //Insert the new row, returning the primary key of the new row
         long newRowId;
         return newRowId = db.insert(FridgeDBHelper.TABLE_NAME, null,values);
+    }
+
+    public static Cursor getEntries(String category){
+        SQLiteDatabase db = mDBHelper.getReadableDatabase();
+
+        String[] columns = {
+                FridgeDBHelper.COLUMN_ENTRY_ID,
+                FridgeDBHelper.COLUMN_PRODUCT,
+                FridgeDBHelper.COLUMN_DURABILITY,
+                FridgeDBHelper.COLUMN_PRICE,
+                FridgeDBHelper.COLUMN_QUANTITY,
+                FridgeDBHelper.COLUMN_UOM,
+                FridgeDBHelper.COLUMN_CATEGORY
+        };
+        String[] selectionArgs = { category };
+
+        Cursor cursor = db.query(FridgeDBHelper.TABLE_NAME, columns, FridgeDBHelper.COLUMN_CATEGORY + "=?", selectionArgs, null, null, null, null);
+
+        return cursor;
     }
 
     /**public static  void deleteTable() {

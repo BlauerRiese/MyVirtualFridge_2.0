@@ -8,17 +8,17 @@
     <color name="categoryTextView">#ffffff</color>
     <color name="spaceSection">#ccdfee</color>
 
-    <color name="box01">#64dd17</color>
-    <color name="box02">#fdbc0a</color>
-    <color name="box03">#d50000</color>
-    <color name="box04">#03a9f4</color>
-    <color name="box05">#ce93d8</color>
-    <color name="box06">#00e5ff</color>
-    <color name="box07">#cddc39</color>
-    <color name="box08">#ffff00</color>
-    <color name="box09">#ff80ab</color>
-    <color name="box10">#b0bec5</color>
-    <color name="box11">#1de9b6</color>
+    <color name="box01">#459b63</color>
+    <color name="box02">#f1b941</color>
+    <color name="box03">#c15660</color>
+    <color name="box04">#549dd0</color>
+    <color name="box05">#a08f53</color>
+    <color name="box06">#6bb8bb</color>
+    <color name="box07">#402c38</color>
+    <color name="box08">#c6af52</color>
+    <color name="box09">#9d63a9</color>
+    <color name="box10">#919aa9</color>
+    <color name="box11">#6bd3a8</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>
