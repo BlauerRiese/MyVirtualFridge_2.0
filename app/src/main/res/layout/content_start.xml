@@ -555,8 +555,7 @@
                 android:contextClickable="false"
                 android:visibility="visible"
                 android:background="#eff6fc"
-                android:layout_marginLeft="8dp"
-                android:clickable="false">
+                android:layout_marginLeft="8dp">
             </LinearLayout>
         </LinearLayout>
 </LinearLayout>
