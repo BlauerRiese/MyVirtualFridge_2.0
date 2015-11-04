@@ -171,11 +171,11 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
 
 
                 /**switch(category){
-                    case "Gemüse":
+                    case "Gemüse(neu)":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#64dd17")));
                         toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
                         break;
-                    case "Fleisch und Fisch":
+                    case "Fleisch(neu) und Fisch":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#d50000")));
                         toolbar.setBackgroundColor(Color.parseColor("#d50000"));
                         break;
@@ -195,11 +195,11 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#cddc39")));
                         toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
                         break;
-                    case "Gewürze":
+                    case "Gewürze(neu)":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ce93d8")));
                         toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
                         break;
-                    case "Getränke":
+                    case "Getränke(neu)":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#03a9f4")));
                         toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
                         break;

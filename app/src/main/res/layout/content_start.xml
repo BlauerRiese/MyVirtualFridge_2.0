@@ -88,10 +88,10 @@
                 android:layout_weight="1"
                 android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
-                android:background="@drawable/banane"
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginTop="2dp" />
+                android:layout_marginTop="2dp"
+                android:background="@drawable/Obst(neu)" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
@@ -133,10 +133,10 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/fischfleisch"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/Fleisch(neu)" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -199,7 +199,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/getraenke"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -277,7 +276,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -340,7 +338,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -379,7 +376,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -419,7 +415,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -482,7 +477,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -521,7 +515,6 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/gefrier"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
