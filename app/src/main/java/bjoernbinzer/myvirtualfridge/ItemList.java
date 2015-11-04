@@ -25,37 +25,37 @@ public class ItemList extends AppCompatActivity {
         getSupportActionBar().setTitle(button);
 
         if (button.equals(getString(R.string.text_box01))) {
-            toolbar.setBackgroundColor(Color.parseColor("#64dd17"));
+            toolbar.setBackgroundColor(Color.parseColor("#459b63"));
         }
         else if (button.equals(getString(R.string.text_box02))) {
-            toolbar.setBackgroundColor(Color.parseColor("#fdbc0a"));
+            toolbar.setBackgroundColor(Color.parseColor("#f1b941"));
         }
         else if (button.equals(getString(R.string.text_box03))) {
-            toolbar.setBackgroundColor(Color.parseColor("#d50000"));
+            toolbar.setBackgroundColor(Color.parseColor("#c15660"));
         }
         else if (button.equals(getString(R.string.text_box04))) {
-            toolbar.setBackgroundColor(Color.parseColor("#03a9f4"));
+            toolbar.setBackgroundColor(Color.parseColor("#549dd0"));
         }
         else if (button.equals(getString(R.string.text_box05))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ce93d8"));
+            toolbar.setBackgroundColor(Color.parseColor("#a08f53"));
         }
         else if (button.equals(getString(R.string.text_box06))) {
-            toolbar.setBackgroundColor(Color.parseColor("#00e5ff"));
+            toolbar.setBackgroundColor(Color.parseColor("#6bb8bb"));
         }
         else if (button.equals(getString(R.string.text_box07))) {
-            toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
+            toolbar.setBackgroundColor(Color.parseColor("#402c38"));
         }
         else if (button.equals(getString(R.string.text_box08))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
+            toolbar.setBackgroundColor(Color.parseColor("#c6af52"));
         }
         else if (button.equals(getString(R.string.text_box09))) {
-            toolbar.setBackgroundColor(Color.parseColor("#ff80ab"));
+            toolbar.setBackgroundColor(Color.parseColor("#9d63a9"));
         }
         else if (button.equals(getString(R.string.text_box10))) {
-            toolbar.setBackgroundColor(Color.parseColor("#b0bec5"));
+            toolbar.setBackgroundColor(Color.parseColor("#919aa9"));
         }
         else if (button.equals(getString(R.string.text_box11))) {
-            toolbar.setBackgroundColor(Color.parseColor("#1de9b6"));
+            toolbar.setBackgroundColor(Color.parseColor("#6bd3a8"));
         }
 
         Cursor cursor = FridgeDB.getEntries(button);
