@@ -17,6 +17,7 @@
     <string name="title_uom_dialog">Einheit wählen:</string>
     <string name="ToastMessage">Bitte füllen Sie alle Felder aus</string>
 
+    <!--Category name changes only have to be applied here-->
     <string name="text_box01">Gemüse</string>
     <string name="text_box02">Obst</string>
     <string name="text_box03">Fleisch und Fisch</string>
@@ -29,21 +30,25 @@
     <string name="text_box10">Milch- und Eierprodukte</string>
     <string name="text_box11">Sonstiges</string>
 
-    <string name="getreideText">Getreide- und Kornprodukte</string>
-    <string name="snackText">Snacks</string>
-
     <string-array name="category">
-        <item>Obst</item>
-        <item>Gemüse</item>
-        <item>Fleisch und Fisch</item>
-        <item>Milch- und Eierprodukte</item>
-        <item>Tiefkühlprodukte</item>
-        <item>Getreideprodukte</item>
-        <item>Saucen, Dressings, Öle</item>
-        <item>Gewürze</item>
-        <item>Getränke</item>
-        <item>Snacks</item>
-        <item>Sonstiges</item>
+        <item>@string/text_box01</item>
+        <item>@string/text_box02</item>
+        <item>@string/text_box03</item>
+        <item>@string/text_box04</item>
+        <item>@string/text_box05</item>
+        <item>@string/text_box06</item>
+        <item>@string/text_box07</item>
+        <item>@string/text_box08</item>
+        <item>@string/text_box09</item>
+        <item>@string/text_box10</item>
+        <item>@string/text_box11</item>
     </string-array>
 
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="contentDescription">My Virtual Fridge</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_item_list">ItemList</string>
 </resources>
