@@ -76,7 +76,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@drawable/roundcornerBox02"
+            android:background="@drawable/roundcorner_box02"
             android:padding="7dp"
             android:nestedScrollingEnabled="true"
             android:focusable="false"
@@ -120,7 +120,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="false"
-                    android:background="@drawable/roundcornerBox03"
+                    android:background="@drawable/roundcorner_box03"
                     android:layout_marginLeft="8dp"
                     android:padding="7dp"
                     android:focusable="false"
@@ -188,7 +188,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox04"
+                    android:background="@drawable/roundcorner_box04"
                     android:layout_marginRight="8dp"
                     android:padding="7dp"
                     android:weightSum="3">
@@ -228,7 +228,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox05"
+                    android:background="@drawable/roundcorner_box05"
                     android:padding="7dp"
                     android:weightSum="3">
 
@@ -267,7 +267,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox06"
+                    android:background="@drawable/roundcorner_box06"
                     android:layout_marginLeft="8dp"
                     android:padding="7dp"
                     android:weightSum="3">
@@ -331,7 +331,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox07"
+                    android:background="@drawable/roundcorner_box07"
                     android:layout_marginRight="8dp"
                     android:padding="7dp"
                     android:weightSum="3">
@@ -371,7 +371,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox08"
+                    android:background="@drawable/roundcorner_box08"
                     android:padding="7dp"
                     android:weightSum="3">
 
@@ -410,7 +410,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox09"
+                    android:background="@drawable/roundcorner_box09"
                     android:layout_marginLeft="8dp"
                     android:padding="7dp"
                     android:weightSum="3">
@@ -475,7 +475,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:contextClickable="true"
-                    android:background="@drawable/roundcornerBox10"
+                    android:background="@drawable/roundcorner_box10"
                     android:layout_marginRight="8dp"
                     android:padding="7dp"
                     android:weightSum="3">
@@ -515,7 +515,7 @@
                 android:layout_weight="1"
                 android:clickable="true"
                 android:contextClickable="true"
-                android:background="@drawable/roundcornerBox11"
+                android:background="@drawable/roundcorner_box11"
                 android:padding="7dp"
                 android:weightSum="3">
 
