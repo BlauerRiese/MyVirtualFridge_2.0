@@ -178,22 +178,6 @@ public class StartActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddFridgeItem.class);
         startActivity(intent);
     }
-    public void openVegetableContent(View view) {
-        Intent intent = new Intent(this, VegetableContent.class);
-        startActivity(intent);
-    }
-    public void openFruitContent(View view) {
-        Intent intent = new Intent(this, GroupContents.FruitContent.class);
-        startActivity(intent);
-    }
-    public void openMeatFishContent(View view) {
-        Intent intent = new Intent(this, GroupContents.MeatFishContent.class);
-        startActivity(intent);
-    }
-    public void openBeveragesContent(View view) {
-        Intent intent = new Intent(this, GroupContents.BeveragesContent.class);
-        startActivity(intent);
-    }
 
     public void openListItem(View view, String category) {
         Intent intent = new Intent(this, ItemList.class);

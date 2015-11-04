@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="bjoernbinzer.myvirtualfridge.SplashScreen"
+    android:orientation="vertical">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="top|center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="top|center"
+            android:src="@drawable/fridge_logo"
+            android:background="#ffffff"
+            android:layout_weight="3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+    </TableLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</LinearLayout>
