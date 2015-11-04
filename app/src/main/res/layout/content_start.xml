@@ -31,7 +31,7 @@
             android:clickable="true"
             android:contextClickable="false"
             android:layout_marginRight="8dp"
-            android:padding="10dp"
+            android:padding="7dp"
             android:focusable="false"
             android:background="@drawable/roundcornerBox01"
             android:weightSum="3">
@@ -41,7 +41,6 @@
                 android:layout_height="0dp"
                 android:id="@+id/imageViewVegetables"
                 android:layout_weight="2"
-                android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
@@ -78,7 +77,7 @@
             android:clickable="true"
             android:contextClickable="false"
             android:background="@drawable/roundcornerBox02"
-            android:padding="10dp"
+            android:padding="7dp"
             android:nestedScrollingEnabled="true"
             android:focusable="false"
             android:weightSum="4">
@@ -88,7 +87,6 @@
                 android:layout_height="0dp"
                 android:id="@+id/imageViewFruits"
                 android:layout_weight="3"
-                android:layout_marginBottom="5dp"
                 android:layout_gravity="top|center"
                 android:background="@drawable/fruechteobst"
                 android:layout_marginRight="2dp"
@@ -124,7 +122,7 @@
                     android:contextClickable="false"
                     android:background="@drawable/roundcornerBox03"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:focusable="false"
                     android:nestedScrollingEnabled="true"
                     android:weightSum="3">
@@ -134,7 +132,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewMeat"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/fischfleisch1"
                         android:layout_marginRight="2dp"
@@ -193,7 +190,7 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox04"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -201,7 +198,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewBeverages"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/getraenke1"
                         android:layout_marginRight="2dp"
@@ -233,7 +229,7 @@
                     android:clickable="true"
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox05"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -241,7 +237,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewSpicery"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
@@ -274,7 +269,7 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox06"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -282,7 +277,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewFrozen"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/tiefkuehl1"
                         android:layout_marginRight="2dp"
@@ -339,7 +333,7 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox07"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -347,7 +341,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewDressings"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/saucen1"
                         android:layout_marginRight="2dp"
@@ -379,7 +372,7 @@
                     android:clickable="true"
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox08"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -387,7 +380,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewCereals"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/korngetreide"
                         android:layout_marginRight="2dp"
@@ -420,7 +412,7 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox09"
                     android:layout_marginLeft="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -428,7 +420,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewSnacks"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
@@ -446,9 +437,11 @@
                         android:singleLine="false"
                         android:textIsSelectable="false"
                         android:layout_weight="1"
-                        android:textColor="#ffffff"
+                        android:textColor="@color/categoryTextView"
                         android:gravity="bottom|center"
-                        android:layout_margin="2dp" />
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -484,7 +477,7 @@
                     android:contextClickable="true"
                     android:background="@drawable/roundcornerBox10"
                     android:layout_marginRight="8dp"
-                    android:padding="10dp"
+                    android:padding="7dp"
                     android:weightSum="3">
 
                     <ImageView
@@ -492,7 +485,6 @@
                         android:layout_height="0dp"
                         android:id="@+id/imageViewMilk"
                         android:layout_weight="2"
-                        android:layout_marginBottom="5dp"
                         android:layout_gravity="top|center"
                         android:background="@drawable/eiermilch"
                         android:layout_marginRight="2dp"
@@ -524,7 +516,7 @@
                 android:clickable="true"
                 android:contextClickable="true"
                 android:background="@drawable/roundcornerBox11"
-                android:padding="10dp"
+                android:padding="7dp"
                 android:weightSum="3">
 
                 <ImageView
@@ -532,7 +524,6 @@
                     android:layout_height="0dp"
                     android:id="@+id/imageViewOthers"
                     android:layout_weight="2"
-                    android:layout_marginBottom="5dp"
                     android:layout_gravity="top|center"
                     android:background="@drawable/othersonstiges"
                     android:layout_marginRight="2dp"
