@@ -192,6 +192,4 @@ public class StartActivity extends AppCompatActivity {
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, array);
         mDrawerList.setAdapter(mAdapter);
     }
-
-
 }
