@@ -191,7 +191,7 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ffff00")));
                         toolbar.setBackgroundColor(Color.parseColor("#ffff00"));
                         break;
-                    case "saucen1, Dressings, Öle":
+                    case "dressings, Dressings, Öle":
                         fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#cddc39")));
                         toolbar.setBackgroundColor(Color.parseColor("#cddc39"));
                         break;

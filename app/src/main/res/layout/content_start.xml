@@ -45,7 +45,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="2dp"
-                android:background="@drawable/gemuese1" />
+                android:background="@drawable/vegetables" />
 
             <bjoernbinzer.myvirtualfridge.CategoryTextView
                 android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
                 android:id="@+id/imageViewFruits"
                 android:layout_weight="3"
                 android:layout_gravity="top|center"
-                android:background="@drawable/fruechteobst"
+                android:background="@drawable/fruits"
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="2dp" />
@@ -133,7 +133,7 @@
                         android:id="@+id/imageViewMeat"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/fischfleisch1"
+                        android:background="@drawable/meat"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -199,7 +199,7 @@
                         android:id="@+id/imageViewBeverages"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/getraenke1"
+                        android:background="@drawable/beverages"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -241,7 +241,7 @@
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp"
-                        android:background="@drawable/gewuerze1" />
+                        android:background="@drawable/spicery" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -278,7 +278,7 @@
                         android:id="@+id/imageViewFrozen"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/tiefkuehl1"
+                        android:background="@drawable/frozen"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -342,7 +342,7 @@
                         android:id="@+id/imageViewDressings"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/saucen1"
+                        android:background="@drawable/dressings"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -381,7 +381,7 @@
                         android:id="@+id/imageViewCereals"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/korngetreide"
+                        android:background="@drawable/cereal"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -424,7 +424,7 @@
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp"
-                        android:background="@drawable/Snack" />
+                        android:background="@drawable/snacks" />
 
                     <bjoernbinzer.myvirtualfridge.CategoryTextView
                         android:layout_width="wrap_content"
@@ -486,7 +486,7 @@
                         android:id="@+id/imageViewMilk"
                         android:layout_weight="2"
                         android:layout_gravity="top|center"
-                        android:background="@drawable/eiermilch"
+                        android:background="@drawable/milk"
                         android:layout_marginRight="2dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="2dp" />
@@ -525,7 +525,7 @@
                     android:id="@+id/imageViewOthers"
                     android:layout_weight="2"
                     android:layout_gravity="top|center"
-                    android:background="@drawable/othersonstiges"
+                    android:background="@drawable/others"
                     android:layout_marginRight="2dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp" />
