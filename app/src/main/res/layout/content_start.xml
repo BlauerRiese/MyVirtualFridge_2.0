@@ -33,7 +33,7 @@
             android:layout_marginRight="8dp"
             android:padding="7dp"
             android:focusable="false"
-            android:background="@drawable/roundcornerBox01"
+            android:background="@drawable/roundcorner_box01"
             android:weightSum="3">
 
             <ImageView
