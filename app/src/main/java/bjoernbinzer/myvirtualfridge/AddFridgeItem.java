@@ -140,7 +140,7 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                     toolbar.setBackgroundColor(Color.parseColor("#549dd0"));
                 }
                 else if (category.equals(getString(R.string.text_box05))) {
-                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("##a08f53")));
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#a08f53")));
                     toolbar.setBackgroundColor(Color.parseColor("#a08f53"));
                 }
                 else if (category.equals(getString(R.string.text_box06))) {
