@@ -86,6 +86,10 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 }
                 Spinner spinnerCategory = (Spinner) findViewById(R.id.spinner_category);
                 String category = spinnerCategory.getSelectedItem().toString();
+                if (category.equals(getString(R.string.default_category))){
+                    Toast.makeText(getApplication(),getString(R.string.ToastMessage), Toast.LENGTH_LONG).show();
+                    return;
+                }
 
                 long rowID = FridgeDB.insertEntry(product, durability, quantity, uom, price, category);
 
@@ -123,9 +127,13 @@ public class AddFridgeItem extends AppCompatActivity implements AddUomDialogFrag
                 FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
                 Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-                if (category.equals(getString(R.string.text_box01))) {
+                if (category.equals(getString(R.string.default_category))){
+                    fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#3F51B5")));
+                    toolbar.setBackgroundColor(Color.parseColor("#3F51B5"));
+                }
+                else if(category.equals(getString(R.string.text_box01))) {
                     fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#459b63")));
-                            toolbar.setBackgroundColor(Color.parseColor("#459b63"));
+                    toolbar.setBackgroundColor(Color.parseColor("#459b63"));
                 }
                 else if (category.equals(getString(R.string.text_box02))) {
                     fab.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#f1b941")));
